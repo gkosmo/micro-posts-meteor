@@ -1,0 +1,15 @@
+<body>
+ {{renderPage}}
+</body>
+
+<template name="layout">
+{{> navbar}}
+  <p> this is the layout </p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-3 col-md-5">
+        {{> yield}}
+      </div>
+    </div>
+  </div>
+</template>
